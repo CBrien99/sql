@@ -14,9 +14,9 @@
     * Open a private window in your browser. Copy and paste the link to your pull request into the address bar. Make sure you can see your pull request properly. This helps the technical facilitator and learning support staff review your submission easily.
 
 Checklist:
-- [ ] Create a branch called `assignment-two`.
-- [ ] Ensure that the repository is public.
-- [ ] Review [the PR description guidelines](https://github.com/UofT-DSI/onboarding/blob/main/onboarding_documents/submissions.md#guidelines-for-pull-request-descriptions) and adhere to them.
+- [X] Create a branch called `assignment-two`.
+- [X] Ensure that the repository is public.
+- [X] Review [the PR description guidelines](https://github.com/UofT-DSI/onboarding/blob/main/onboarding_documents/submissions.md#guidelines-for-pull-request-descriptions) and adhere to them.
 - [ ] Verify that the link is accessible in a private browser window.
 
 If you encounter any difficulties or have questions, please don't hesitate to reach out to our team via our Slack. Our Technical Facilitators and Learning Support staff are here to help you navigate any challenges.
@@ -45,8 +45,12 @@ There are several tools online you can use, I'd recommend [Draw.io](https://www.
 
 **HINT:** You do not need to create any data for this prompt. This is a conceptual model only. 
 
+![Prompt1](image.png)
+
 #### Prompt 2
 We want to create employee shifts, splitting up the day into morning and evening. Add this to the ERD.
+
+![Prompt2](image-1.png)
 
 #### Prompt 3
 The store wants to keep customer addresses. Propose two architectures for the CUSTOMER_ADDRESS table, one that will retain changes, and another that will overwrite. Which is type 1, which is type 2? 
@@ -54,7 +58,8 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
 ```
-Your answer...
+The Type 1 slowly changing dimension (SCD) models overwrite the old value with a new value and do not retain changes, while Type 2 SCD model retains changes by adding a new row for the value and keeping the old value in the same table for historical and reporting purposes.
+
 ```
 
 ***
@@ -182,5 +187,8 @@ Consider, for example, concepts of labour, bias, LLM proliferation, moderating c
 
 
 ```
-Your thoughts...
+The ethical issues that "Neural Nets Are Just People All the Way Down" covers center around human labour in machine learning, the biases they inadvertently incorporate into AI systems, and the broader societal ramifications of large-scale automation. The article highlights how although AI models are marketed as autonomous, their foundation is rooted in the labor of thousands of low-paid workers, often via platforms like Amazon Mechanical Turk. These workers accomplish very basic tasks, such as labelling images, transcribing text, and content moderation for little recognition and low wages. All this raises questions about digital labor exploitation and the ethics of outsourcing monotonous, underpaid work to people in precarious living conditions. Beyond labor, there is another critical challenge: the biases within AI systems themselves. Training datasets, as would be the case for image recognition and natural language processing, naturally inherit the biases of their creators. If a dataset represents or emulates historical prejudices or inequity, then an AI model can even go so far as to amplify such discrimination in hiring, policing, and content moderation. For example, the article points out how ImageNet and other visual data can mislabel people with toxic stereotypes, serving only to perpetuate systemic bias. These ethical issues call for more controls in dataset curation toward diversified and non-discriminatory AI decision-making. The wider implications of the use of AI in society, especially the proliferation of LLMs, beg questions as to their impact on knowledge, creativity, and discourse. It's a bit of a paradox: even as AI is seemingly autonomous and intelligent, it is still deeply dependent on human intervention at every turn. The rise of AI within digital spaces complicates the process of content moderation, where automated systems falter in situations that demand nuance, cultural sensitivity, or ethical judgment. AI can also be used to generate potentially harmful content. All these issues, taken together, raise questions of stronger ethics, greater transparency in the development of AI, and the values that society places on human contribution behind the development of artificial intelligence.
+
+
+
 ```
